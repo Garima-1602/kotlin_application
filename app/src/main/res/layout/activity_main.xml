@@ -10,13 +10,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
+
         android:padding="8dp"
         android:text="Hello Guys!"
         android:layout_gravity="center"
-        android:textColor="#212121"
+        android:textColor="#f5f5f5"
         android:textStyle="bold"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,5 +36,25 @@
         android:layout_gravity="center"
         android:layout_margin="50dp"
         android:src="@drawable/tony_stark_new"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Click Here!"
+        android:background="#d7ccc8"
+        android:textColor="#f5f5f5"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Name"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="#d7ccc8"
+        android:textColor="#f5f5f5"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:inputType="text"/>
 
 </LinearLayout>
