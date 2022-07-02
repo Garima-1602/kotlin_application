@@ -8,6 +8,7 @@ class MainActivity : AppCompatActivity() {
     //to transfer the data from one screen to another we need bundles
     {
         super.onCreate(savedInstanceState)
+        //activity main to provide UI of app
         setContentView(R.layout.activity_main) // R is an automated file generated in android
         println("onCreate called")
     }
