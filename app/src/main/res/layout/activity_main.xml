@@ -13,6 +13,7 @@
         android:layout_marginLeft="50dp"
         android:padding="8dp"
         android:text="Hello Guys!"
+        android:layout_gravity="center"
         android:textColor="#212121"
         android:textStyle="bold"
         android:textSize="18sp" />
@@ -23,14 +24,16 @@
         android:text="I am a android developer!"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="7dp"
+        android:layout_gravity="center"
         android:padding="5dp"
         android:textStyle="italic"
         android:textSize="18dp"
-        android:textColor="#3e2723"/>
+        android:textColor="#f5f5f5"/>
 
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_gravity="center"
         android:layout_margin="50dp"
         android:src="@drawable/tony_stark_new"/>
 
