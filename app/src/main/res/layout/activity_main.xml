@@ -6,55 +6,66 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:padding="8dp"
-        android:text="Hello Guys!"
-        android:layout_gravity="center"
-        android:textColor="#f5f5f5"
-        android:textStyle="bold"
-        android:textSize="20sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="I am a android developer!"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="7dp"
-        android:layout_gravity="center"
-        android:padding="5dp"
-        android:textStyle="italic"
-        android:textSize="18dp"
-        android:textColor="#f5f5f5"/>
-
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
         android:layout_margin="50dp"
-        android:src="@drawable/tony_stark_new"/>
+        android:src="@drawable/logo" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="#FFFFFFFF"
+        android:textColor="#FF000000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="#FFFFFFFF"
+        android:textColor="#FF000000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:inputType="textPassword"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:padding="8dp"-->
+<!--        android:text="Hello Guys!"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textColor="#f5f5f5"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="20sp" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="I am a android developer!"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginLeft="7dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:padding="5dp"-->
+<!--        android:textStyle="italic"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textColor="#f5f5f5"/>-->
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Click Here!"
-        android:background="#d7ccc8"
+        android:text="Login!"
+        android:background="#FF3700B3"
         android:textColor="#f5f5f5"
         android:textStyle="bold"
         android:textSize="18sp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your Name"
-        android:layout_margin="20dp"
-        android:padding="10dp"
-        android:background="#d7ccc8"
-        android:textColor="#f5f5f5"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:inputType="text"/>
 
 </LinearLayout>
