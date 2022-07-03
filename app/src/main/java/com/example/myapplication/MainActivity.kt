@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
     {
         super.onCreate(savedInstanceState)
         //activity main to provide UI of app
-        setContentView(R.layout.activity_profile) // R is an automated file generated in android
+        setContentView(R.layout.activity_loginpage) // R is an automated file generated in android
         println("onCreate called")
     }
 
