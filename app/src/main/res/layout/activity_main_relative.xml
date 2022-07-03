@@ -11,7 +11,8 @@
         android:layout_gravity="center"
         android:textColor="#f5f5f5"
         android:textStyle="bold"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"/>
 
     <TextView
         android:id="@+id/txtAndroid"
@@ -24,13 +25,15 @@
         android:padding="5dp"
         android:textStyle="italic"
         android:textSize="18dp"
-        android:textColor="#f5f5f5"/>
+        android:textColor="#f5f5f5"
+        android:layout_below="@+id/txtLayoutHeader"/>
+
     <ImageView
         android:id="@+id/imgInsta"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:layout_margin="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
         android:src="@drawable/logo" />
     <Button
         android:id="@+id/btnClick"
@@ -41,7 +44,8 @@
         android:background="#FF3700B3"
         android:textColor="#f5f5f5"
         android:textStyle="bold"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"/>
     <EditText
         android:id="@+id/editTxt"
         android:layout_width="match_parent"
@@ -53,5 +57,20 @@
         android:textColor="#FF000000"
         android:textStyle="bold"
         android:textSize="18sp"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:layout_below="@+id/imgInsta"/>
+    <EditText
+        android:id="@+id/editTxtAnother"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="#FFFFFFFF"
+        android:textColor="#FF000000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editTxt"/>
+
 </RelativeLayout>
