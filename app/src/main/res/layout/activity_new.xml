@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".NewActivity">
+
+    <ImageView
+        android:id="@+id/ImgLogo"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:src="@drawable/avengers_Logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"
+        android:layout_below="@+id/ImgLogo"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:hint="@string/mobile_number"/>
+
+    <EditText
+        android:id="@+id/Pswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:padding="6dp"
+        android:layout_below="@+id/Phone"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:hint="@string/enter_password" />
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:padding="6dp"
+        android:layout_below="@+id/Pswd"
+        android:backgroundTint="@color/mycolor"
+        android:text="@string/log_in"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/forgotPswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textSize="16sp"
+        android:padding="6dp"
+        android:layout_below="@+id/btnClick"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_yourself"
+        android:textSize="16sp"
+        android:padding="6sp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+</RelativeLayout>
