@@ -11,7 +11,7 @@
         android:id="@+id/ImgLogo"
         android:layout_width="240dp"
         android:layout_height="100dp"
-        android:src="@drawable/tony_stark_new"
+        android:src="@drawable/avengers"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp" />
     <EditText
@@ -26,7 +26,8 @@
         android:inputType="phone"
         android:maxLength="10"
         android:maxLines="1"
-        android:hint="@string/mobile_number"/>
+        android:hint="@string/mobile_number"
+        android:textColor="#000000"/>
 
     <EditText
         android:id="@+id/Pswd"
@@ -39,7 +40,8 @@
         android:layout_below="@+id/Phone"
         android:inputType="textPassword"
         android:maxLines="1"
-        android:hint="@string/enter_password" />
+        android:hint="@string/enter_password"
+        android:textColor="#000000"/>
     <Button
         android:id="@+id/btnClick"
         android:layout_width="match_parent"
@@ -63,7 +65,8 @@
         android:padding="6dp"
         android:layout_below="@+id/btnClick"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"/>
     <TextView
         android:id="@+id/Register"
         android:layout_width="wrap_content"
@@ -73,5 +76,6 @@
         android:padding="6sp"
         android:layout_marginBottom="30dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"/>
 </RelativeLayout>
