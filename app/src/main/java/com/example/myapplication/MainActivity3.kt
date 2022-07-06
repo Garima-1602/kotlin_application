@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -8,17 +9,15 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 
-class MainActivity3 : AppCompatActivity() , View.OnClickListener {
-    //to widen the scope we have declare them before the override
-    override fun onClick(p0: View?) {
-     Toast.makeText(this@MainActivity3,"We clicked on the button to see toast",
-         Toast.LENGTH_LONG).show()
-    }
+class MainActivity3 : AppCompatActivity() {
+
     lateinit var Phone :EditText
     lateinit var Pswd :EditText
     lateinit var btnClick : Button
     lateinit var  forgotPswd: TextView
     lateinit var  Register: TextView
+    val validMobileNumber="1112346767"
+    val validPassword= "hulk"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
@@ -30,7 +29,24 @@ class MainActivity3 : AppCompatActivity() , View.OnClickListener {
         forgotPswd=findViewById(R.id.forgotPswd)
         Register=findViewById(R.id.Register)
 
-        btnClick.setOnClickListener(this)
+
+        btnClick.setOnClickListener{
+            val mobileNumber=Phone.text.toString()
+            val password=Pswd.text.toString()
+            if((mobileNumber==validMobileNumber)&&(password==validPassword)){
+                val intent= Intent(this@MainActivity3,MainActivity::class.java)
+                startActivity(intent)
+            }
+            else{
+                Toast.makeText(
+                    this@MainActivity3,
+                    "Incorrect Credentials",
+                    Toast.LENGTH_LONG
+                ).show()  //this is known as lambda reprsentation
+
+            }
+
+        }
     }
 
 

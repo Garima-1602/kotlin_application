@@ -27,8 +27,8 @@
         android:maxLength="10"
         android:maxLines="1"
         android:hint="@string/mobile_number"
-        android:backgroundTint="#000000"
-        />
+        android:textColor="#FFBB86FC"
+        android:textColorHint="#000000" />
 
     <EditText
         android:id="@+id/Pswd"
@@ -41,7 +41,9 @@
         android:layout_below="@+id/Phone"
         android:inputType="textPassword"
         android:maxLines="1"
-        android:hint="@string/enter_password" />
+        android:hint="@string/enter_password"
+        android:textColorHint="@color/black"/>
+
     <Button
         android:id="@+id/btnClick"
         android:layout_width="match_parent"
@@ -56,24 +58,26 @@
         android:textColor="#ffffff"
         android:textStyle="bold"
         android:textSize="18sp"/>
+
     <TextView
         android:id="@+id/forgotPswd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/forgot_password"
-        android:textSize="16sp"
-        android:padding="6dp"
         android:layout_below="@+id/btnClick"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true" />
+        android:padding="6dp"
+        android:text="@string/forgot_password"
+        android:textSize="16sp" />
+
     <TextView
         android:id="@+id/Register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/register_yourself"
-        android:textSize="16sp"
-        android:padding="6sp"
-        android:layout_marginBottom="30dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:padding="6sp"
+        android:text="@string/register_yourself"
+        android:textSize="16sp" />
 </RelativeLayout>
