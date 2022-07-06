@@ -73,6 +73,10 @@ class MainActivity3 : AppCompatActivity() {
 
         }
     }
-
+//so that when we return back to the activity from avengers there is no login credential
+    override fun onPause() {
+        super.onPause()
+        finish()
+    }
 
 }
