@@ -16,8 +16,8 @@ class MainActivity3 : AppCompatActivity() {
     lateinit var btnClick : Button
     lateinit var  forgotPswd: TextView
     lateinit var  Register: TextView
-    val validMobileNumber="1112346767"
-    val validPassword= "hulk"
+    val validMobileNumber="1110001110"
+    val validPassword= arrayOf("tony","steve","hulk","thanos")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
@@ -33,9 +33,34 @@ class MainActivity3 : AppCompatActivity() {
         btnClick.setOnClickListener{
             val mobileNumber=Phone.text.toString()
             val password=Pswd.text.toString()
-            if((mobileNumber==validMobileNumber)&&(password==validPassword)){
-                val intent= Intent(this@MainActivity3,MainActivity::class.java)
-                startActivity(intent)
+            var nameOfAvenger="Avenger"
+            val intent= Intent(this@MainActivity3,MainActivity::class.java)
+            if((mobileNumber==validMobileNumber)){
+                if(password==validPassword[0])
+                {
+                    nameOfAvenger="Iron Man"
+                    intent.putExtra("Name",nameOfAvenger)
+                    startActivity(intent)
+                }
+                else if(password==validPassword[1])
+                {
+                    nameOfAvenger="Captain America"
+                    intent.putExtra("Name",nameOfAvenger)
+                    startActivity(intent)
+                }
+                else if(password==validPassword[2])
+                {
+                    nameOfAvenger="The Hulk"
+                    intent.putExtra("Name",nameOfAvenger)
+                    startActivity(intent)
+                }
+                else if(password==validPassword[3])
+                {
+                    nameOfAvenger="The Avengers"
+                    intent.putExtra("Name",nameOfAvenger)
+                    startActivity(intent)
+                }
+
             }
             else{
                 Toast.makeText(
