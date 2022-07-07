@@ -25,14 +25,12 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         sharedPreferences=getSharedPreferences(getString(R.string.preference_file_name), Context.MODE_PRIVATE)
         val isLoggedIn=sharedPreferences.getBoolean("isLoggedIn",false)
+        setContentView(R.layout.activity_main2)
         if(isLoggedIn)
         {
             val intent= Intent(this@LoginActivity,AvengersActivity::class.java)
             startActivity(intent)
-        }
-        else
-        {
-            setContentView(R.layout.activity_main2)
+            finish()
         }
 
         title="Login"
