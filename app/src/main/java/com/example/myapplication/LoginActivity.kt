@@ -55,30 +55,34 @@ class LoginActivity : AppCompatActivity() {
                         //validpassword[0]-> {condiiton}
                 if(password==validPassword[0])
                 {
-                    savePreferences()
+
                     nameOfAvenger="Iron Man"
-                    intent.putExtra("Name",nameOfAvenger)
+                    savePreferences(nameOfAvenger)
+                    //intent.putExtra("Name",nameOfAvenger)
                     startActivity(intent)
                 }
                 else if(password==validPassword[1])
                 {
-                    savePreferences()
+
                     nameOfAvenger="Captain America"
-                    intent.putExtra("Name",nameOfAvenger)
+                    savePreferences(nameOfAvenger)
+                    //intent.putExtra("Name",nameOfAvenger)
                     startActivity(intent)
                 }
                 else if(password==validPassword[2])
                 {
-                    savePreferences()
+
                     nameOfAvenger="The Hulk"
-                    intent.putExtra("Name",nameOfAvenger)
+                    savePreferences(nameOfAvenger)
+                    //intent.putExtra("Name",nameOfAvenger)
                     startActivity(intent)
                 }
                 else if(password==validPassword[3])
                 {
-                    savePreferences()
+
                     nameOfAvenger="The Avengers"
-                    intent.putExtra("Name",nameOfAvenger)
+                    savePreferences(nameOfAvenger)
+                    //intent.putExtra("Name",nameOfAvenger)
                     startActivity(intent)
                 }
 
@@ -99,9 +103,10 @@ class LoginActivity : AppCompatActivity() {
         super.onPause()
         finish()
     }
-    fun savePreferences()
+    fun savePreferences(title:String) //parameter here is used to save the name of avenger
     {
         sharedPreferences.edit().putBoolean("isLoggedIn",true).apply()
+        sharedPreferences.edit().putString("Title",title).apply()
     }
 
 }
